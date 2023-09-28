@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button ></button>
+    <!-- <svg width="500" height="200">
+        <rect x="50" y="20" width="400" height="70" fill="blue" stroke="red" stroke-width="5" />
+    </svg>
+
+    <svg width="300" height="200" 
+        style="border:1px solid black"> x="50" y="20" width="400" height="70" fill="blue" stroke="red" stroke-width="5" />
+    </svg>
+
+    <svg width="400" height="400" style="border:1px solid black">
+        <polygon points="80,50,30,120,140,120" fill="red" stroke="blue" stroke-width="4" />
+    </svg>
+
+    <svg width="360" height="200">
+        <polygon points="100,10,30,198,78,10,78,160,198" fill="lime" stroke="purple" stroke-width="5" fill-rule="evenodd" />
+    </svg> -->
+
+    <script>
+        var x = document.getElementById("demo");
+        function getLocation(){
+            if (navigator.geolocation){
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else{
+                x.innerHTML = "Geo location is not supported";
+            }
+        }
+
+        function showPosition(position){
+            x.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+    </script>
+</body>
+</html>
