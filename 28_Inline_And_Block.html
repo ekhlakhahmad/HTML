@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline and block level Elements</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 200px;
+            border: 3px solid red;
+            display: flex;
+            padding: 0 50px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        .inlineEle {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        span {
+            border: 3px solid;
+            height: 30px;
+            width: 60px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFbvnrACjU-6ny38NPqaBqmfAJaSn4R52QiHcAg0AXJSp32WtQYFJK7qadxW29AuKeLM&usqp=CAU"
+            alt="">
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyFbvnrACjU-6ny38NPqaBqmfAJaSn4R52QiHcAg0AXJSp32WtQYFJK7qadxW29AuKeLM&usqp=CAU"
+            alt="">
+    </div>
+    <div class="inlineEle">
+        <span>abc</span>
+        <span>pqr</span>
+    </div>
+</body>
+
+</html>
