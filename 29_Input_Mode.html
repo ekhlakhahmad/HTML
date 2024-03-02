@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Mode</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: #000;
+        }
+        .container{
+            width: 75%;
+            max-width: 500px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin: 30px 50px;
+        }
+        form{
+            position: relative;
+            width: 100%;
+            padding: 10px;
+        }
+        form h2{
+            text-align: center;
+            margin-block: 8px;
+            font-size: 32px;
+        }
+        form label{
+            width: 100%;
+            font-size: 18px;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            outline: none;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h2>Information</h2>
+            <label for="reg">Registration No:</label><br>
+            <input type="text" inputmode="numeric"><br>
+            <label for="name">Name: </label><br>
+            <input type="text"><br>
+            <label for="mob">Mobile No:</label><br>
+            <input type="text" inputmode="numeric"><br>
+            <label for="email">E-mail ID:</label><br>
+            <input type="email" inputmode="email"><br>
+            <label for="github">GitHub Link:</label><br>
+            <input type="url" inputmode="url"><br>
+        </form>
+    </div>
+</body>
+</html>
